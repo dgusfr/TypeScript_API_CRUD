@@ -1,9 +1,10 @@
 import { Request, Response } from "express";
-import type TipoPet from "../tipos/TipoPet";
+import type TipoPet from "../types/TipoPet";
 import EnumEspecie from "../enum/EnumEspecie";
 import EnumPorte from "../enum/EnumPorte";
 import PetRepository from "../repositories/PetRepository";
 import PetEntity from "../entities/PetEntity";
+
 let listaDePets: Array<TipoPet> = [];
 
 let id = 0;
