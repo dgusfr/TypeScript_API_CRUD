@@ -2,7 +2,9 @@ import express from "express";
 import PetController from "../controller/PetController";
 import PetRepository from "../repositories/PetRepository";
 import { AppDataSource } from "../config/dataSource";
+
 const router = express.Router();
+
 const petRepository = new PetRepository(
   AppDataSource.getRepository("PetEntity"),
   AppDataSource.getRepository("AdotanteEntity")
