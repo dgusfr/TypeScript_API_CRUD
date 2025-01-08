@@ -59,7 +59,6 @@ export default class PetRepository implements InterfacePetRepository {
 
       return { success: true };
     } catch (error) {
-      // Se ocorrer um erro inesperado, você pode retornar uma mensagem genérica ou personalizada.
       return {
         success: false,
         message: "Ocorreu um erro ao tentar excluir o pet.",
